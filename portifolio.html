@@ -7,6 +7,21 @@
     <title>Portifolio</title>
 </head>
 
+<style>
+    body {
+        font-family: Arial;
+        background-color: white;
+    }
+
+    section {
+        margin: 40px;
+    }
+
+    a:hover {
+        color: red;
+    }
+</style>
+
 <body>
     <!--Home Section-->
     <section id="home">
@@ -17,12 +32,12 @@
     </section>
 
     <nav aria-label="Menu Principal">
-        <ul>
-            <li><a href="#home"><b>Início</b></a></li>
-            <li><a href="#sobre"><b>Sobre Mim</b></a></li>
-            <li><a href="#habilidade"><b>Habilidades</b></a></li>
-            <li><a href="#projetos"><b>Projetos</b></a></li>
-            <li><a href="#contato"><b>Contato</b></a></li>
+        <ul style="display: flex; justify-content: center; gap: 20px;">
+            <a href="#home"><b>Início</b></a>
+            <a href="#sobre"><b>Sobre Mim</b></a>
+            <a href="#habilidade"><b>Habilidades</b></a>
+            <a href="#projetos"><b>Projetos</b></a>
+            <a href="#contato"><b>Contato</b></a>
         </ul>
     </nav>
     </header>
@@ -40,6 +55,8 @@
                     resolução de problemas em hardware e software.</p>
                 <p>Proativo, organizado e com facilidade para aprendizado de novas tecnologias, busca oportunidade para
                     aplicar e aprimorar seus conhecimentos na área de Tecnologia da Informação.</p>
+                    
+                <img src="https://avatars.githubusercontent.com/u/267184942?v=4">
     </nav>
     </section>
 
@@ -78,14 +95,13 @@
                 <li>Linguagem C, Compilador GCC, Biblioteca Standard Input/Output (<code>stdio.h</code>) e Lógica de
                     Programação Estruturada.</li>
             </ul>
-            <b>Calculadora com Interface Gráfica em Python</b>
+            <b>Revitalização de Computadores de Armazém</b>
             <ul>
-                <li>Criei uma calculadora desktop funcional com interface visual (GUI), simulando a experiência de uma
-                    calculadora padrão do sistema operacional. Fui responsável por programar a lógica de cálculo no
-                    back-end e desenhar o layout no front-end. O principal desafio foi o gerenciamento de eventos (event
-                    listener) para capturar os cliques dos botões e atualizar o visor em tempo real, além de organizar a
-                    geometria dos botões (Grid Layout) para que a interface ficasse responsiva e alinhada.</li>
-                <li>Python 3, Biblioteca Tkinter (para GUI), Biblioteca Math (para funções avançadas) e VS Code.</li>
+                <li>Este projeto teve como objetivo recuperar e colocar novamente em funcionamento diversos computadores antigos que estavam armazenados há anos em um depósito. 
+                    A proposta era avaliar o estado das máquinas, realizar manutenção e tentar reaproveitar os equipamentos sempre que possível.
+                    Durante o processo, participei da análise e montagem dos computadores, identificando problemas de hardware e substituindo componentes defeituosos.
+                    Muitos dos equipamentos apresentavam falhas nas fontes de alimentação, processadores, memórias e outros componentes essenciais, o que exigiu diagnóstico cuidadoso e testes constantes.
+                <li>Montagem e manutenção de hardware, Diagnóstico de componentes (CPU, memória RAM, fonte de alimentação, placa-mãe), Sistemas operacionais Windows e Linux, Ferramentas de teste e manutenção de hardware e Metodologias de troubleshooting (identificação e resolução de problemas)</li>
             </ul>
     </nav>
     </section>
@@ -97,14 +113,14 @@
             <h3 style="text-align: center">Contato</h3>
             <li><b>E-mail: </b>exemplo@gmail.com</li>
             <li><b>Telefone: </b>(22) 4002-8922</li>
-
-            <li><b>GitHub: </b><a href=https://github.com/samfernandes>https://github.com/samfernandes</a></li>
+            <li><b>GitHub: </b><a href=https://github.com/samfernandes
+                    target="_blank">https://github.com/samfernandes</a></li>
     </nav>
     </section>
     </main>
 
     <footer>
-        <p>&copy; Samuel Xavier 2026. Todos os direitos reservados.</p>
+        <p style="text-align: center; font-size: 12px">&copy; Samuel Xavier 2026. Todos os direitos reservados.</p>
     </footer>
 
 </body>
