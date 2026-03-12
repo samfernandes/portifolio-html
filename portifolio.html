@@ -4,35 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Portifolio</title>
 </head>
-
-<style>
-    body {
-        font-family: Arial;
-        background-color: white;
-    }
-
-    section {
-        margin: 40px;
-    }
-
-    a:hover {
-        color: red;
-    }
-</style>
 
 <body>
     <!--Home Section-->
     <section id="home">
-        <header style="text-align: center; font-size: 20px;">
-            <h1 style="color: #B80000;">Samuel Xavier</h1>
-
-            <h2>Tecnologia de Informação - TI</h2>
+        <header>
+            <h1>Samuel Xavier</h1>
     </section>
 
-    <nav aria-label="Menu Principal">
-        <ul style="display: flex; justify-content: center; gap: 20px;">
+    <section id="subtitulo">
+        <h2>Tecnologia de Informação - TI</h2>
+        </p>
+    </section>
+
+
+    <nav id="menu" aria-label="Menu Principal">
+        <ul>
             <a href="#home"><b>Início</b></a>
             <a href="#sobre"><b>Sobre Mim</b></a>
             <a href="#habilidade"><b>Habilidades</b></a>
@@ -46,17 +36,19 @@
 
     <nav aria-label="Sobre Mim">
         <section id="sobre">
-            <h3 style="text-align: center">Sobre Mim</h3>
-            <main>
-                <p>Estudante do curso Técnico em Informática, atualmente cursando 3º módulo, com conhecimentos em
-                    manutenção
-                    de computadores, redes, lógica de programação e suporte técnico.</p>
-                <p>Possui experiência prática no desenvolvimento de projetos acadêmicos, configuração de sistemas e
-                    resolução de problemas em hardware e software.</p>
-                <p>Proativo, organizado e com facilidade para aprendizado de novas tecnologias, busca oportunidade para
-                    aplicar e aprimorar seus conhecimentos na área de Tecnologia da Informação.</p>
-                    
-                <img src="https://avatars.githubusercontent.com/u/267184942?v=4">
+            <h2>Sobre Mim</h3>
+                <main>
+                    <p>Estudante do curso Técnico em Informática, atualmente cursando 3º módulo, com conhecimentos em
+                        manutenção
+                        de computadores, redes, lógica de programação e suporte técnico.</p>
+                    <p>Possui experiência prática no desenvolvimento de projetos acadêmicos, configuração de sistemas e
+                        resolução de problemas em hardware e software.</p>
+                    <p>Proativo, organizado e com facilidade para aprendizado de novas tecnologias, busca oportunidade
+                        para
+                        aplicar e aprimorar seus conhecimentos na área de Tecnologia da Informação.</p>
+
+                    <img class="github_avatar" src="https://avatars.githubusercontent.com/u/267184942?v=4"
+                        alt="Doutor Xavier">
     </nav>
     </section>
 
@@ -64,45 +56,55 @@
 
     <nav aria-label="Habilidades">
         <section id="habilidade">
-            <h3 style="text-align: center">Habilidades</h3>
-            <ul>
-                <li>Informática Básica</li>
-                <li>Banco de Dados</li>
-                <li>Progamação Python</li>
-                <li>Progamação C</li>
-                <li>Sistemas Operacionais</li>
-                <li>HTML</li>
-                <li>Domínio Básico em Inglês</li>
-                <li>Comunicação</li>
-                <li>Trabalho em Equipe</li>
-            </ul>
+            <h2>Habilidades</h3>
+                <ul>
+                    <li>Informática Básica</li>
+                    <li>Banco de Dados</li>
+                    <li>Progamação Python</li>
+                    <li>Progamação C</li>
+                    <li>Sistemas Operacionais</li>
+                    <li>HTML</li>
+                    <li>Domínio Básico em Inglês</li>
+                    <li>Comunicação</li>
+                    <li>Trabalho em Equipe</li>
+                </ul>
     </nav>
     </section>
 
     <hr>
 
     <nav aria-label="Projetos">
-        <section id="projeto">
-            <h3 style="text-align: center">Projeto</h3>
-            <b>Calculadora de Linha de Comando em C</b>
-            <ul>
-                <li>Desenvolvi uma aplicação executada via console para realizar operações matemáticas fundamentais. Meu
-                    papel envolveu desde a estruturação do algoritmo até a implementação do código final. Utilizei
-                    estruturas de repetição (como <code>do-while</code>) para criar um menu interativo e persistente. Um
-                    desafio técnico que superei foi a implementação de validação de dados de entrada, garantindo que o
-                    programa não travasse ao tentar realizar divisões por zero, utilizando condicionais
-                    (<code>if/else</code>) para tratar essas exceções.</li>
-                <li>Linguagem C, Compilador GCC, Biblioteca Standard Input/Output (<code>stdio.h</code>) e Lógica de
-                    Programação Estruturada.</li>
-            </ul>
-            <b>Revitalização de Computadores de Armazém</b>
-            <ul>
-                <li>Este projeto teve como objetivo recuperar e colocar novamente em funcionamento diversos computadores antigos que estavam armazenados há anos em um depósito. 
-                    A proposta era avaliar o estado das máquinas, realizar manutenção e tentar reaproveitar os equipamentos sempre que possível.
-                    Durante o processo, participei da análise e montagem dos computadores, identificando problemas de hardware e substituindo componentes defeituosos.
-                    Muitos dos equipamentos apresentavam falhas nas fontes de alimentação, processadores, memórias e outros componentes essenciais, o que exigiu diagnóstico cuidadoso e testes constantes.
-                <li>Montagem e manutenção de hardware, Diagnóstico de componentes (CPU, memória RAM, fonte de alimentação, placa-mãe), Sistemas operacionais Windows e Linux, Ferramentas de teste e manutenção de hardware e Metodologias de troubleshooting (identificação e resolução de problemas)</li>
-            </ul>
+        <section id="projetos">
+            <h2>Projeto</h3>
+                <b>Calculadora de Linha de Comando em C</b>
+                <ul>
+                    <li>Desenvolvi uma aplicação executada via console para realizar operações matemáticas fundamentais.
+                        Meu
+                        papel envolveu desde a estruturação do algoritmo até a implementação do código final. Utilizei
+                        estruturas de repetição (como <code>do-while</code>) para criar um menu interativo e
+                        persistente. Um
+                        desafio técnico que superei foi a implementação de validação de dados de entrada, garantindo que
+                        o
+                        programa não travasse ao tentar realizar divisões por zero, utilizando condicionais
+                        (<code>if/else</code>) para tratar essas exceções.</li>
+                    <li>Linguagem C, Compilador GCC, Biblioteca Standard Input/Output (<code>stdio.h</code>) e Lógica de
+                        Programação Estruturada.</li>
+                </ul>
+                <b>Calculadora com Interface Gráfica em Python</b>
+                <ul>
+                    <li>Este projeto teve como objetivo recuperar e colocar novamente em funcionamento diversos
+                        computadores antigos que estavam armazenados há anos em um depósito.
+                        A proposta era avaliar o estado das máquinas, realizar manutenção e tentar reaproveitar os
+                        equipamentos sempre que possível.
+                        Durante o processo, participei da análise e montagem dos computadores, identificando problemas
+                        de hardware e substituindo componentes defeituosos.
+                        Muitos dos equipamentos apresentavam falhas nas fontes de alimentação, processadores, memórias e
+                        outros componentes essenciais, o que exigiu diagnóstico cuidadoso e testes constantes.
+                    <li>Montagem e manutenção de hardware, Diagnóstico de componentes (CPU, memória RAM, fonte de
+                        alimentação, placa-mãe), Sistemas operacionais Windows e Linux, Ferramentas de teste e
+                        manutenção de hardware e Metodologias de troubleshooting (identificação e resolução de
+                        problemas)</li>
+                </ul>
     </nav>
     </section>
 
@@ -111,16 +113,20 @@
     <nav aria-label="Contato">
         <section id="contato">
             <h3 style="text-align: center">Contato</h3>
-            <li><b>E-mail: </b>exemplo@gmail.com</li>
-            <li><b>Telefone: </b>(22) 4002-8922</li>
-            <li><b>GitHub: </b><a href=https://github.com/samfernandes
-                    target="_blank">https://github.com/samfernandes</a></li>
+            <ul>
+                <li><b>E-mail: </b><a href=mailto:exemplo@gmail.com>exemplo@gmail.com</a></li>
+                <li><b>Telefone: </b>(22) 4002-8922</li>
+                <li><b>GitHub: </b><a href=https://github.com/samfernandes
+                        target="_blank">https://github.com/samfernandes</a></li>
+            </ul>
     </nav>
     </section>
     </main>
 
     <footer>
-        <p style="text-align: center; font-size: 12px">&copy; Samuel Xavier 2026. Todos os direitos reservados.</p>
+        <p id="footer">
+            &copy; Samuel Xavier 2026. Todos os direitos reservados.
+        </p>
     </footer>
 
 </body>
