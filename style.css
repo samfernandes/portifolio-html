@@ -4,7 +4,9 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -14,10 +16,14 @@ main {
 }
 
 :root {
-    --bg: #0f172a;        /* azul escuro */
-    --card: #1e293b;      /* cinza azulado */
-    --primary: #38bdf8;   /* azul neon */
-    --text: #e2e8f0;      /* branco suave */
+    --bg: #0f172a;
+    /* azul escuro */
+    --card: #1e293b;
+    /* cinza azulado */
+    --primary: #38bdf8;
+    /* azul neon */
+    --text: #e2e8f0;
+    /* branco suave */
 }
 
 h2 {
@@ -25,7 +31,7 @@ h2 {
     border-radius: 12px;
     margin: 20px auto;
     width: 80%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 #menu ul {
@@ -96,7 +102,8 @@ h2 {
     border: 3px solid var(--primary);
 }
 
-h1, h2 {
+h1,
+h2 {
     margin-bottom: 10px;
 }
 
@@ -109,7 +116,7 @@ h3 {
     padding: 18px;
     border-radius: 12px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 }
 
@@ -138,7 +145,7 @@ h3 {
     padding: 18px;
     border-radius: 12px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 }
 
