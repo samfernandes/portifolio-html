@@ -10,6 +10,10 @@ h3 {
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     max-width: 900px;
     margin: auto;
@@ -98,6 +102,13 @@ h2 {
     width: 250px;
     border-radius: 50%;
     border: 3px solid var(--primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* efeito ao passar o mouse */
+.github_avatar:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 0 20px var(--primary);
 }
 
 h1,
@@ -109,9 +120,90 @@ h3 {
     color: #38bdf8;
 }
 
-#habilidade ul {
-    column-count: 2;
-    column-gap: 40px;
+.habilidades-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.habilidade-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.habilidade-box li {
+    background: var(--card);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.habilidade-box li:hover {
+    transform: translateY(-3px);
+    background: #334155;
+}
+
+.habilidade-box i {
+    color: var(--primary);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.skill-card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* brilho suave tipo GitHub */
+.skill-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(56,189,248,0.2), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* HOVER */
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.skill-card:hover::before {
+    opacity: 1;
+}
+
+/* ÍCONE */
+.skill-card i {
+    font-size: 30px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+/* TEXTO */
+.skill-card h4 {
+    margin-bottom: 5px;
+}
+
+.skill-card p {
+    font-size: 13px;
+    opacity: 0.8;
 }
 
 .projetos {
@@ -131,8 +223,8 @@ h3 {
 
 .imagem-projeto {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    max-height: 250px; /* controla o tamanho */
+    object-fit: contain;
 }
 
 .projeto-box:hover {
