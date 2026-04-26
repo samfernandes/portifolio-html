@@ -223,7 +223,7 @@ h3 {
 
 .imagem-projeto {
     width: 100%;
-    max-height: 250px; /* controla o tamanho */
+    max-height: 250px;
     object-fit: contain;
 }
 
@@ -303,4 +303,46 @@ section {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+#themeToggle {
+    background: var(--primary);
+    color: #0f172a;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+#themeToggle:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+#themeToggle:active {
+    transform: scale(0.95);
+}
+
+#themeToggle {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.light-theme {
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --primary: #0ea5e9;
+    --text: #0f172a;
 }
